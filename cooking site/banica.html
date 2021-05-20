@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banica page</title>
+    <link rel="stylesheet" href="css files/homepage.css">
+    <link rel="stylesheet" href="css files/banica.css">
+    <link href='https://fonts.googleapis.com/css?family=Architects Daughter' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+</head>
+
+<body>
+    <header>
+        <h1>Simple Recipes</h1>
+    </header>
+    <nav class="navi">
+        <a href="Homepage.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="recepies.html">Recipes</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="contact.html">Contact page</a>
+        <a href="Product.html">Product</a>
+    </nav>
+    <main>
+        <section>
+            <ul class="breadcrumb">
+                <li><a href="recepies.html">Recipes</a></li>
+                <li><a href="recepies.html">Breakfast</a></li>
+                <li>Banica</li>
+              </ul>
+        </section>
+        <section>
+            <div class="slideshow-container">
+
+                <div class="Aslides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="images/banica2.jpg" style="width:100%">
+                </div>
+
+                <div class="Aslides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="images/banicajpg.jpg" style="width:100%">
+                </div>
+
+                <div class="Aslides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="images/banitsa3.jpg" style="width:100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <br>
+
+                <div class="changing" style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </section>
+        <section>
+
+            <p class="description">
+                <b>Banica</b><br>
+                Banica for breakfast, banica for lunch, banica for dinner! The banica does not have
+                an exact place in the
+                Bulgarian's
+                menu, because he eats it at any time in any letiant. The sweet banica - banica with apples, banica with
+                Turkish
+                delight, banica with pumpkin, or in its even more popular savory versions - banica with cheese, banica
+                with
+                spinach, banica with leeks is as important a part of the Bulgarian national cuisine as bean soup and
+                cabbage sarma. The recipe for this banica with cheese and ready-made crusts is one of the easiest you
+                can
+                come across. The original recipe for the banica is with cottage cheese, but you can always replace the
+                cottage cheese with cheese! Quick, easy and very tasty, this banica recipe with ready-made crusts is
+                perfect for a quick breakfast or a quick dinner! In addition, this recipe is perfect for the lucky New
+                Year's banica .
+            </p>
+        </section>
+        <section>
+            <ul type="none" class="Products">
+                <b>Products:</b>
+                <li><input type="checkbox">3 eggs</li>
+                <li><input type="checkbox">300g white cheese</li>
+                <li><input type="checkbox">400g ground crusts</li>
+                <li><input type="checkbox">400g yogurt</li>
+                <li><input type="checkbox">1 tea spoon baking soda</li>
+                <li><input type="checkbox">3/4 tea cup oil</li>
+                <li><input type="checkbox">50g butter</li>
+                <li><input type="checkbox">50g flour</li>
+            </ul>
+        </section>
+        <section>
+            <ol class="steps">
+                <b>Steps:</b>
+                    <li><p>The first step in the recipe for a banica with cheese and ready-made crusts is the preparation of the
+                    filling. Stir in the eggs (previously removed from the refrigerator), yoghurt, cottage cheese /
+                    cheese,
+                    3/4 a cup of tea oil and baking soda. You can also use cottage cheese. If you use cottage cheese,
+                    add
+                    about an equal teaspoon of salt. Mix the Products well until a homogeneous mixture is obtained.</p></li>
+                <li><p>In a greased pan put 1-2 leaves of the crusts, on which put about a ladle (for soup) of the mixture.
+                    Then
+                    sprinkle with a few drops of the remaining oil. On top again put a sheet or two of the crusts and
+                    again
+                    of the mixture, and finally oil. Repeat the procedure in this sequence until the crusts and mixture
+                    are
+                    finished.</p></li>
+                <li><p>
+                    Grease the last sheet of crusts with oil and very carefully cut it into pieces with a sharp knife so
+                    that you can more easily cut the banica into pieces after baking. Bake the banica in a preheated 200
+                    degree
+                    oven for about 30 minutes until the banica turns golden.
+                </p></li>
+            </ol>
+        </section>
+        <section>
+            <video muted autoplay fullscreen style="width: 70%;" class="videos">
+                <source src="images/banica.mp4" type="video/webm">
+                <source src="images/banica.mp4" type="video/mp4">
+                Sorry, your browser doesn't support embedded videos.
+            </video>
+        </section>
+        <section>
+            <div class="commentar">
+                <h3 class="label"><i>Add Comments:</i></h3>
+                <label for"name" class="text">Name:</label> 
+                <input type="text" id="name" class="label" /> <br /> <br />
+                <label for"bodyText" class="text">Comment: </label>
+                <textarea rows="1" col "30" id="bodyText" class="label"></textarea><br />
+                <input type="button" id="addComent" value="Add Comment" class="button1" />
+                <div id="container">
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+    <script src="JS/banica.js">
+    </script>
+</body>
+
+</html>

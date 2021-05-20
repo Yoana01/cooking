@@ -1,0 +1,136 @@
+@media screen and (min-width: 500px) and (max-width:1300px) {
+  .bg-img{
+   display: flex;
+   flex-direction: column;
+    height: 900px !important;
+  }
+ }
+@media screen and (max-width: 500px) {
+  .quiz-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .question {
+    font-size: 20px !important;
+  }
+
+  .answers {
+    font-size: 15px !important;
+  }
+
+  .slide {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px !important;
+    width: 300px !important;
+  }
+
+  .buttons{
+    margin-top: 190px !important;
+    margin-left: 100px !important;
+  }
+  button{
+    padding:10px !important;
+  }
+  #results{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px !important;
+    text-align: center;
+  }
+}
+
+.bg-img {
+  /* The image used */
+  background-image: url("..//images/quiz.jpg");
+  min-height: 550px;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  box-shadow: 5px 5px;
+
+}
+
+.back {
+  background-color: whitesmoke;
+  min-width: 580px;
+  /* height:400px; */
+  margin-top: 100px;
+  margin-left: 150px;
+  padding-top: 0px;
+  padding: 25px;
+  float: left;
+
+}
+
+.buttons {
+  float: left;
+  margin-left: 380px;
+  margin-top: 160px;
+}
+
+.question {
+  font-size: 30px;
+  text-align: justify;
+  padding-bottom: 10px;
+}
+
+.answers {
+  padding-bottom: 20px;
+  text-align: justify;
+  display: inline-block;
+}
+
+.answers label {
+  display: block;
+  padding-bottom: 10px;
+}
+
+button {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 22px;
+  background-color: #279;
+  color: #fff;
+  border-radius: 3px;
+  padding: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  background-color: #38a;
+}
+
+.slide {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 50%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s;
+  background-color: whitesmoke;
+  margin-left: 350px;
+  margin-top: 50px;
+  padding: 25px;
+}
+
+.active-slide {
+  opacity: 1;
+  z-index: 2;
+}
+
+.quiz-container {
+  position: relative;
+  height: 200px;
+  border-radius: 3px;
+}
+
+#results {
+  font-size: 35px;
+  font-family: 'Architects Daughter', 'Times New Roman', Times, serif;
+  color: white
+}

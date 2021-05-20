@@ -1,0 +1,425 @@
+@media screen and (min-width: 500px) and (max-width:1300px) {
+    aside{
+        width:460px !important;
+        font-size: 30px;
+        margin-top:-50px !important;
+        
+    }
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+    .meinfo{
+        top: -80px !important;
+    }
+    .merow {
+        top: -20px !important;
+    }
+
+    .mecol {
+        margin-top: 100px;
+    }
+
+    .box {
+        margin-bottom: 30px;
+        margin-right: 25px !important;
+        height: 150px;
+        width: 350px !important;
+        border-radius: 35px !important;
+    }
+    .popimg{
+        height: 150px;
+        width: 350px !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .navi {
+        display: flex;
+        flex-direction: column;
+        height:250px !important;
+    }
+    .navi a{
+        flex-direction: column;
+        text-align: left !important;
+        padding: 0px !important;
+        padding-left: 50px !important;
+    }
+    .meinfo {
+        display: flex;
+        flex-direction: column;
+        width: 400px !important;
+    }
+    .mecol{
+        width: 100% !important;
+    }
+    .mepic{
+        margin-top: 10px !important;
+    }
+    aside{
+        width:470px !important;
+        font-size: 30px;
+        margin-top:20px !important;
+        margin-bottom: 50px !important;
+        
+    }
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/* NAVIGATION */
+.navi {
+    background-color: #333;
+    overflow: hidden;
+ }
+
+.video {
+    border-radius: 10px;
+    box-shadow: 10px 15px;
+    top: 0;
+}
+
+.navi a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 23px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Architects Daughter', 'Times New Roman', Times, serif;
+}
+
+.navi a:hover {
+    background-color: #ddd;
+    color: black;
+    text-decoration: none;
+}
+
+.navi a.active {
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+}
+
+.navi .icon {
+    display: none;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    float: left;
+    width: 25%;
+    margin-left: 55px;
+    margin-right: 25px;
+    height: 300px;
+    width: 400px;
+    border-radius: 50px;
+
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+    justify-content: center;
+    padding: 30px;
+}
+
+.meinfo {
+    position: relative;
+    float: left;
+    width: 800px;
+    border-style: outset;
+    border-width: 8px;
+    border-radius: 5px;
+    margin: 50px;
+    background-color: rgb(253, 243, 228);
+}
+
+.merow {
+    position: relative;
+    margin: 8px -16px;
+}
+
+/* Create four equal columns that floats next to each other */
+.mecol {
+    float: left;
+    width: 50%;
+    text-align: justify;
+    border-radius: 5px;
+}
+
+.popimg {
+    height: 300px;
+    width: 400px;
+    border-radius: 10px;
+    border-style: outset;
+    border-width: 8px;
+    border-color: rgb(243, 201, 129);
+    box-shadow: 10px 15px rgba(0, 0, 0, 0.747);
+    display: flex;
+
+    /* Then we define the flow direction 
+       and if we allow the items to wrap 
+     * Remember this is the same as:
+     * flex-direction: row;
+     * flex-wrap: wrap;
+     */
+    flex-flow: row wrap;
+
+    /* Then we define how is distributed the remaining space */
+    justify-content: space-around;
+}
+
+.popimg:hover {
+    transform: scale(1.2);
+    background-color: rgba(0, 0, 0, 0.747);
+}
+
+/* Clear floats after rows */
+.merow:after {
+    content: "";
+    display: table;
+    clear: both;
+    border-radius: 5px;
+}
+
+.mepic {
+    border-radius: 5px;
+    box-shadow: 10px 15px;
+    margin-left: 55px;
+    margin-top: 35px;
+    width: 300px;
+    height: 400px;
+
+}
+
+.medes {
+    text-align: justify;
+    text-indent: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-family: 'Architects Daughter', 'Times New Roman', Times, serif;
+}
+
+.btnmore {
+    width: 150px;
+    height: 60px;
+    margin-top: 5px;
+    margin-left: 150px;
+    padding: 5px;
+    border-radius: 5%;
+    border-width: 3px;
+    font-weight: bold;
+    font-size: 17px;
+    font-family: 'Architects Daughter', 'Times New Roman', Times, serif;
+}
+
+.btnmore a {
+    text-decoration: none;
+    color: black;
+}
+
+.btnmore:hover {
+    transform: scale(1.1);
+    box-shadow: 3px 7px;
+    text-decoration: none;
+    color: black;
+    
+}
+
+
+/* FOOTER */
+.footer {
+    position: fixed;
+    background-color: #333;
+    width: 100%;
+    height: 10%;
+    bottom: 0;
+}
+
+.footer a {
+    color: #f2f2f2;
+    text-align: justify;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Architects Daughter', 'Times New Roman', Times, serif;
+}
+
+.footer a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.social {
+    margin-left:800px;
+    color: #f2f2f2;
+}
+
+aside {
+    position: relative;
+    border: inset;
+    background-color: #333;
+    color: white;
+    float: right;
+    margin-top: 150px;
+    padding-left: 62px;
+    font-size: 25px;
+    height: 250px;
+    width: 500px;
+    line-height: 50px;
+    text-align: justify;
+    font-family: 'Bad Script', 'Times New Roman', Times, serif;
+    border-radius: 5px;
+    overflow: hidden;
+    display: block;
+    right: -450px;
+
+}
+
+aside:hover {
+    right: 0px;
+    overflow: visible;
+    position: relative;
+    transition: right 1s ease;
+}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #333;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-top:15px;
+    font-size: 20px;
+    font-family: 'Architects Daughter', 'Times New Roman', Times, serif;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+  
+  .container {
+    padding: 16px;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }

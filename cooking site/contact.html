@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact page</title>
+    <link rel="stylesheet" href="css files/homepage.css">
+    <link rel="stylesheet" href="css files/contact.css">
+    <link href='https://fonts.googleapis.com/css?family=Architects Daughter' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Simple recepies</h1>
+    </header>
+    <nav class="navi">
+        <a href="Homepage.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="recepies.html">Recipes</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="contact.html">Contact page</a>
+        <a href="Product.html">Product</a>
+    </nav>
+    <main>
+        <section>
+            <div class="bg-img">
+                <form class="container" name="myForm"  onsubmit="move(event)">
+                    <p class="info"><i>You can share your opinion about the page or give your recipes which you know and
+                            I will try them
+                            and and share them.</i></p>
+                    <label for="name" class="labeling">First name:</label>
+                    <input type="text" name="name" id="name" class="inputs" placeholder="Your name" autofocus required><br>
+                    <label for="lName" class="labeling">Last name:</label>
+                    <input type="text" name="lName" id="lName" class="inputs" placeholder="Your name" autofocus required><br>
+                    <label for="email" class="labeling">Email:</label><br>
+                    <input type="text" name="email" id="email" class="inputs" placeholder="youremail@mail.com" required
+                        autofocus><br>
+                    <label for="texts" class="labeling">Share:</label><br>
+                    <textarea id="texts" placeholder="Write something..." oninput="countWord()"></textarea><br>
+                    <p class="result"> Word Count:
+                        <span id="show">0/400</span>
+                    </p><input type="submit" value="Submit" class="button">
+                    <input type="reset" value="Reset" class="button" > 
+                    <br>  
+                    <div id="myProgress">
+                        <div id="myBar"></div>
+                      </div>
+                      <p id="successMsg">Your message was successfully submitted!</p>          
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <ul type="none">
+            <li><a href="Homepage.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="recepies.html">Recipes</a></li>
+            <li><a href="contact.html">Contact page</a></li>
+        </ul>
+        <div class="social">
+            <a href="https://www.facebook.com/yoana.churkina"><span class="fa fa-facebook"
+                    style='color:white'></span>Yoana Churkina</a>
+            <a href="https://www.instagram.com/_enjoylife1/"><span class=class="fa fa-instagram"
+                    style='color:white'></span>_enjoythelife1</a>
+        </div>
+    </footer>
+    <script src="JS/contact.js"> </script>
+</body>
+</html>

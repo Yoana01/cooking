@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="css files/homepage.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Architects Daughter' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Bad Script' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Simple recipes</h1>
+    </header>
+    <nav class="navi">
+        <a href="Homepage.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="recepies.html">Recipes</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="contact.html">Contact page</a>
+        <a href="Product.html">Product</a>
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate"  method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+    </nav>
+    <main>
+        <section>
+            <video muted autoplay fullscreen style="width: 100%;" class="video" setPlaySpeed()>
+                <source src="images/No-Bake Cheesecake ASMR Cooking Sounds 4K.mp4" type="video/webm">
+                <source src="images/No-Bake Cheesecake ASMR Cooking Sounds 4K.mp4" type="video/mp4">
+                Sorry, your browser doesn't support embedded videos.
+            </video>
+        </section>
+        <section>
+                <div class="clearfix">
+                    <h1 style="margin-top: 50px; margin-bottom: 50px;" class="title"><i>Popular items</i></h1>
+                    <div class="box">
+                        <a href="recepies.html">
+                            <img src="images/images.jpeg" alt="Salad" class="popimg">
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="recepies.html">
+                            <img src="images/spagetti.jpg" alt="Spagetti" class="popimg">
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="recepies.html">
+                            <img src="images/choclatecake.jpg" alt="Chocolate cake" class="popimg">
+                        </a>
+                    </div>
+                </div>
+            </fieldset>
+        </section>
+        <aside>
+            <h3 style="margin-top: 50px;">Cooking thoughts</h3>
+            A messy kitchen is sign of happiness. <br>
+            Eating is neccesity, but cooking is art.<br>
+        </aside>
+        <section class="meinfo">
+            <div class="merow">
+                <div class="mecol">
+                    <img src="images/yoana.jpeg" alt="picture of me" class="mepic">
+                </div>
+                <div class="mecol">
+                    <h2>About me</h2>
+                    <p class="medes">
+                        My name is Yoana Churkina. I have created this webpages, where to share my recipes. Mainly
+                        they will be from the old books
+                        of my grandma and mum, but also and other recipes from different cuisines, which I have
+                        learnt from my friends or from other
+                        cookers.
+                    </p>
+                    <button class="btnmore"><a href="about.html">Learn more ...</a></button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <ul type="none">
+            <li><a href="Homepage.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="recepies.html">Recipes</a></li>
+            <li><a href="contact.html">Contact page</a></li>
+            <a href="Product.html">Product</a>
+        </ul>
+        <div class="social">
+            <a href="https://www.facebook.com/yoana.churkina"><span class="fa fa-facebook"
+                    style='color:white'></span>Yoana Churkina</a>
+            <a href="https://www.instagram.com/_enjoylife1/"><span class=class="fa fa-instagram"
+                    style='color:white'></span>_enjoythelife1</a>
+        </div>
+    </footer>
+    <script src="JS/homepage.js"></script>
+</body>
+
+</html>
