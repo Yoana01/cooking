@@ -1,0 +1,83 @@
+@media screen and (min-width: 400px) {
+}
+
+@media screen and (min-width: 800px) 
+  {}
+  /* All webpages */
+/*This property will make sure that padding and border are included in the total width and height of the elements */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+  .row {
+    margin-left: 240px;
+    height: 20%;
+    padding-left: 50px;
+  }
+  /* Add padding BETWEEN each column */
+  .row,
+  .row > .column {
+    padding: 5px;
+    height: 25%;
+  }
+  /* Create four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 250px;
+    margin-top: 30px;
+  }
+  /* Clear floats after rows */ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* Content */
+  .items {
+    background-color:rgb(253, 243, 228);
+   padding-left: 8px;
+   padding-top: 8px;
+   padding-right: 8px;
+   border-radius: 15px;
+   height: 420px;
+  }
+  img{
+    width: 130px;
+    height: 280px;
+    border-radius: 15px;
+  }
+  p{
+    text-align: justify;
+    font-size: 20px;
+  }
+  .button {
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    margin-top:5px;
+    text-align: center;
+    text-decoration-color: white;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 12px;
+    background-color: #333;
+  }
+.columns {
+float: left;
+width: 200px;
+}
+.Categories{
+  margin-top:75px ;
+  background-color: rgb(199, 194, 194);
+  padding: 8px;
+  height: 80px;
+  height: 100%;
+  text-align: justify;
+  font-size: 20;
+  border-radius: 15px;
+  
+}
+.Product{margin:0px;}

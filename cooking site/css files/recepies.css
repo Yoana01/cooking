@@ -1,0 +1,112 @@
+@media screen and (max-width: 500px) {
+.accordion{
+  width: 170px !important;
+  margin:0px !important;
+  font-size:10px !important;
+}
+.panel{
+  width: 170px !important;
+  margin:0px !important;
+  padding:5px !important;
+  font-size:15px !important;
+  text-align: left !important;
+}
+.count{
+  display: flex;
+  flex-direction: column;
+  width:200px !important;
+  height:250px !important;
+  left:250px !important;
+  top:-600px !important;
+}
+.text{
+  padding-left:20px !important;
+  font-size:20px !important;
+}
+ #countdown{
+  font-size:25px !important;
+ }
+}
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: rgb(97, 95, 95);
+  color:whitesmoke;
+  cursor: pointer;
+  padding: 18px;
+  width: 23%;
+  border: none;
+  transition: 0.4s;
+  text-align: justify;
+  font-family: 'Architects Daughter', 'Times New Roman', Times, serif;
+  font-size: 35px;
+  border: none;
+  border-radius: 15px;
+  scroll-behavior: auto;
+  top: 150px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+  /* background-color: #ccc; */
+  background-color: rgb(97, 95, 95);
+  
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  top: 0;
+  bottom: 0;
+  padding: 30px;
+  background-color: rgb(233, 233, 233);
+  display: none;
+  overflow: hidden;
+  width: 23%;
+  text-align: justify;
+  font-family: 'Architects Daughter', 'Times New Roman', Times, serif;
+  font-size: 25px;
+  border-radius: 12px;
+}
+.material-icons{
+  line-height: 1;
+  padding: 0;
+  color: currentColor;
+  opacity: .6;
+  margin: 0 5px 0 0;
+}
+
+ul.food li a {
+  color: black;
+  text-decoration: none;
+}
+
+ul.food li a:hover {
+  text-decoration: none;
+  color: black;
+}
+#countdown {
+  position: relative;
+  text-align: center;
+  font-size: 60px;
+  color:white;
+  padding-top:30px;
+  border-radius: 12px;
+}
+.count{
+  position: relative;
+  background-color: #333;
+  top: -350px;
+  left:650px;
+  width:550px;
+  height:300px;
+  border-radius: 15px;
+}
+.text{
+  color:white;
+  font-size: 30px;
+  padding-left: 70px;
+  padding-right: 30px;
+  padding-top: 30px;
+  text-align: justify;
+  font-family: 'Architects Daughter', 'Times New Roman', Times, serif;
+}
