@@ -1,3 +1,13 @@
+html {
+  overflow-x: hidden;
+}
+
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  background-color:whitesmoke;
+  font-family: 'Architects Daughter', 'Times New Roman', Times, serif;
+}
 .itemPicture {
     width: 400px;
     padding-left:50px;
@@ -8,14 +18,15 @@
     margin-left:800px;
     font-size:20pt;
     text-align:justify;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Bebas Neue', 'Times New Roman', Times, serif;
   }
   /* Style the Image Used to Trigger the Modal */
   #itemPic{
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
-    margin-left:150px;
+    margin-left:125px;
+    margin-top: -25px;
   }  
   #itemPic:hover {opacity: 0.7;} 
     /* The Modal (background) */
@@ -87,23 +98,22 @@
   * {
       box-sizing: border-box;
   }
-  body {
-    background-color:whitesmoke;
-    font-family: 'Architects Daughter', 'Times New Roman', Times, serif;
-  }
     
   .description{
     position: static;
     margin-top: 15px;
     font-size:20px;
     width:600px;
-    background-color: white;
+    margin-left: 183px;
   }
-  .des{
-    padding:10px;
-    font-size: 20px;
-    text-align: justify;
-    background-color: white;
+  #des{
+    position: relative;
+    padding:13px;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Architects Daughter', 'Times New Roman', Times, serif;
+    margin-left: 100px;
+    width: 400px;
   }
   .button{ border: none;
     margin-top: 20px;

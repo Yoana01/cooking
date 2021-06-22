@@ -1,47 +1,3 @@
-@media screen and (max-width: 500px) {
-  .slideshow-container{
-    display:flex;
-    flex-direction: column;
-    margin-left:  30px !important;
-    margin-right: 30px !important;
-  }
-  .videos {
-    margin-left: 80px !important;
-  }
-  .Products{
-    display:flex;
-    flex-direction: column;
-    padding-left:50px !important;
-    padding-right: 60px !important;
-  }
-  .steps{
-    display:flex;
-    flex-direction: column;
-    padding-left:50px !important;
-    padding-right: 60px !important;
-  }
-  .description{
-    display:flex;
-    flex-direction: column;
-    padding-left:50px !important;
-    padding-right: 60px !important;
-  }
-  .commentar {
-    display: flex;
-    flex-direction: column;
-    margin-left: 50px !important;
-    width: 300px !important;
-  }
-
-  .comentar input[type="text"],
-  .commentar textarea {
-    margin-left: 50px !important;
-  }
-  .button1{
-    margin-left: 70px !important;
-  }
-}
-
 /* Slideshow container */
 .slideshow-container {
   position: relative;
@@ -293,4 +249,47 @@ ul.breadcrumb li a {
 ul.breadcrumb li a:hover {
   text-decoration: none;
   color: black;
+}
+@media screen and (max-width: 500px) {
+  .slideshow-container{
+    display:flex;
+    flex-direction: column;
+    margin-left:  30px !important;
+    margin-right: 30px !important;
+  }
+  .videos {
+    margin-left: 80px !important;
+  }
+  .Products{
+    display:flex;
+    flex-direction: column;
+    padding-left:50px !important;
+    padding-right: 60px !important;
+  }
+  .steps{
+    display:flex;
+    flex-direction: column;
+    padding-left:50px !important;
+    padding-right: 60px !important;
+  }
+  .description{
+    display:flex;
+    flex-direction: column;
+    padding-left:50px !important;
+    padding-right: 60px !important;
+  }
+  .commentar {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px !important;
+    width: 300px !important;
+  }
+
+  .comentar input[type="text"],
+  .commentar textarea {
+    margin-left: 50px !important;
+  }
+  .button1{
+    margin-left: 70px !important;
+  }
 }

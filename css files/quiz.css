@@ -1,46 +1,3 @@
-@media screen and (min-width: 500px) and (max-width:1300px) {
-  .bg-img{
-   display: flex;
-   flex-direction: column;
-    height: 900px !important;
-  }
- }
-@media screen and (max-width: 500px) {
-  .quiz-container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .question {
-    font-size: 20px !important;
-  }
-
-  .answers {
-    font-size: 15px !important;
-  }
-
-  .slide {
-    display: flex;
-    flex-direction: column;
-    margin-left: 100px !important;
-    width: 300px !important;
-  }
-
-  .buttons{
-    margin-top: 190px !important;
-    margin-left: 100px !important;
-  }
-  button{
-    padding:10px !important;
-  }
-  #results{
-    display: flex;
-    flex-direction: column;
-    font-size: 20px !important;
-    text-align: center;
-  }
-}
-
 .bg-img {
   /* The image used */
   background-image: url("..//images/quiz.jpg");
@@ -133,4 +90,46 @@ button:hover {
   font-size: 35px;
   font-family: 'Architects Daughter', 'Times New Roman', Times, serif;
   color: white
+}
+@media screen and (min-width: 500px) and (max-width:1300px) {
+  .bg-img{
+   display: flex;
+   flex-direction: column;
+    height: 900px !important;
+  }
+ }
+@media screen and (max-width: 500px) {
+  .quiz-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .question {
+    font-size: 20px !important;
+  }
+
+  .answers {
+    font-size: 15px !important;
+  }
+
+  .slide {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px !important;
+    width: 300px !important;
+  }
+
+  .buttons{
+    margin-top: 190px !important;
+    margin-left: 100px !important;
+  }
+  button{
+    padding:10px !important;
+  }
+  #results{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px !important;
+    text-align: center;
+  }
 }
