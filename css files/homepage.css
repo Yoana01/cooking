@@ -17,6 +17,10 @@ body {
     overflow: hidden;
     width: 100%;
  }
+ .links{
+    margin-top: 40px;
+    margin-left:20px;
+ }
 
 .video {
     border-radius: 10px;
@@ -33,7 +37,6 @@ body {
     text-decoration: none;
     font-size: 20px;
     font-family: 'Architects Daughter', 'Times New Roman', Times, serif;
-    margin-top: 25px;
 
 }
 
