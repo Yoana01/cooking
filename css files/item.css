@@ -14,9 +14,10 @@ body {
     float: left;
   }
   .content{
-    border:400px;
     margin-left:800px;
+    margin-top: -250px;
     font-size:20pt;
+    width: 280px;
     text-align:justify;
     font-family: 'Bebas Neue', 'Times New Roman', Times, serif;
   }
@@ -27,6 +28,7 @@ body {
     transition: 0.3s;
     margin-left:125px;
     margin-top: -25px;
+    width:100%;
   }  
   #itemPic:hover {opacity: 0.7;} 
     /* The Modal (background) */
@@ -101,10 +103,11 @@ body {
     
   .description{
     position: static;
-    margin-top: 15px;
     font-size:20px;
     width:600px;
     margin-left: 183px;
+    padding-top: 50px;
+    margin-top:  15px;
   }
   #des{
     position: relative;
@@ -114,6 +117,7 @@ body {
     font-family: 'Architects Daughter', 'Times New Roman', Times, serif;
     margin-left: 100px;
     width: 400px;
+    height: 250px;
   }
   .button{ border: none;
     margin-top: 20px;
@@ -129,4 +133,29 @@ body {
     cursor: pointer;
     background-color:gray;
     border-radius: 12px;
+  }
+  @media screen and (max-width: 500px) {
+    #itemPic{
+      width: 70%;
+      margin: auto;
+    } 
+    .content{
+      display: flex;
+      flex-direction: column;
+      margin-left: 23px;
+      margin-top: 0px;
+      font-size:20px;
+    }
+    .button{
+      width: auto;
+    }
+    .description{
+      margin-left: 23px;
+    }
+    #des{
+      width: 310px;
+      height: 290px;
+      margin-left: -22px;
+      
+    }
   }
